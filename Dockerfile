@@ -17,7 +17,7 @@ RUN apk add --no-cache bash && \
     chown -R zk:zk /data && \
     chown -R zk:zk /opt/zookeeper
     
-EXPOSE 2181
+EXPOSE 2181  2888 3888
 VOLUME ["/data"]
 WORKDIR /opt/zookeeper
 USER zk
